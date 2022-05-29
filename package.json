@@ -1,6 +1,6 @@
 {
   "name": "@tootallnate/ina260",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Read values from the INA260 bi-directional current and power monitor",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
