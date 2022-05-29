@@ -83,7 +83,7 @@ export class INA260 {
 	 * @param  {I2cBus} i2cBus  Instance of an opened i2c-bus.
 	 * @param  {number} address The address of the INA260 IC.
 	 */
-	constructor(i2cBus: I2CBus, address: number) {
+	constructor(i2cBus: I2CBus, address = 0x40) {
 		this._i2cBus = i2cBus;
 		this._address = address;
 	}
