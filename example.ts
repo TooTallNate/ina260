@@ -2,10 +2,7 @@ import * as i2c from 'i2c-bus';
 import { INA260 } from './';
 
 const bus = i2c.openSync(1);
-const ina = new INA260({
-  bus,
-  address: 0x40,
-});
+const ina = new INA260(bus);
 
 while (true) {
   const [voltage, current, power] = await Promise.all([
